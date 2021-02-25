@@ -2,7 +2,7 @@
 
 Description of the contents of this folder and the logic of your data → retinal variables mapping.
 
-1) Abstract Analog
+1) Abstract Analog <br>
 Based upon the quite universal analog clock, this system utilizes the hour and minute hands on a familiar analog clock to indicate the current hour. The circle along the "o'clock" arm represents the current minute. Reading from center outwards, the minutes range from zero to five. The minute circle can also be used to differentiate am from pm. A filled circle indicates pm and an empty circle means am. The seconds are represented by the radiating circle from the center of the composition. It begins in the center and grows larger with the number of seconds (zero through nine).
 
 2) Brick-by-brick
