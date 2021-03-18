@@ -15,7 +15,7 @@ function setup() {
 
 // this gets called every frame (about 60 frames per second)
 function draw() {
-  background(237, 255, 240)
+  background(255, 246, 245)
   noStroke()
 
   // store the current time in a local variable
@@ -34,25 +34,33 @@ function draw() {
     secsWidth = maxWidth * now.progress.min
   }
 
+  // colors
+  colorMode(RGB);
+  let from = color(254, 197, 187);
+  let to = color(248, 237, 235);
+  colorMode(RGB); // Try changing to HSB.
+  let interA = lerpColor(from, to, 0.40);
+  let interB = lerpColor(from, to, 0.60);
+  let interC = lerpColor(from, to, 0.80);
   // triangle sec     // 10 sec changes opacity
 
   strokeWeight(3);
-  fill(182, 240, 192, 50);
+  fill(from);
 
   if (now.sec >= 10){
-      fill(182, 240, 192, 100);
+      fill(from);
   }
   if (now.sec >= 20){
-      fill(182, 240, 192, 150);
+      fill(interA);
   }
   if (now.sec >= 30){
-      fill(182, 240, 192, 200);
+      fill(interB);
   }
   if (now.sec >= 40){
-      fill(182, 240, 192, 250);
+      fill(interC);
   }
   if (now.sec >= 50){
-      fill(182, 240, 192, 300);
+      fill(to);
   }
 
   beginShape(TRIANGLES);
@@ -61,19 +69,27 @@ function draw() {
   vertex(600, 550);       // right point
   endShape();
 
+  //colors
+  colorMode(RGB);
+  let from2 = color(248, 237, 235);
+  let to2 = color(216, 226, 220);
+  colorMode(RGB); // Try changing to HSB.
+  let interA2 = lerpColor(from, to, 0.40);
+  let interB2 = lerpColor(from, to, 0.60);
+
   // triangle mins    // every 15 mins changes opacity
 
   strokeWeight(3);
-  fill(250, 221, 177, 50);
+  fill(from2);
 
   if (now.min >= 15){
-      fill(250, 221, 177, 100);
+      fill(interA2);
   }
   if (now.min >= 30){
-      fill(250, 221, 177, 200);
+      fill(interB2);
   }
   if (now.min >= 45){
-      fill(250, 221, 177, 300);
+      fill(to2);
   }
 
   beginShape(TRIANGLES);
@@ -85,12 +101,13 @@ function draw() {
   // triangle hours   // red am + purple pm
 
   strokeWeight(3);
+  fill(236, 228, 219);
 
   if (now.hours >= 12){
-      fill(255, 173, 150);
+      fill(216, 226, 220);
   }
   if (now.hours < 12){
-      fill(184, 177, 252);
+      fill(254, 197, 187);
   }
 
   beginShape(TRIANGLES);

@@ -53,11 +53,11 @@ function draw() {
   strokeWeight(4);
   noFill();
 
+  circle(cx, cy + now.min*-3, 18) // circle(x, y, d)
+
   if (now.hours >= 12) {
       fill('#b6c3bd');    // indicates PM!
   }
-
-  circle(cx, cy + now.min*-3, 18) // circle(x, y, d)
 
   // sec circles
   noFill();
