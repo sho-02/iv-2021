@@ -1,6 +1,6 @@
 #### Potential project topics & questions
 
-1. Chinatown Gentrification
+1. Chinatown Gentrification<br>
     a) The demographics of American Chinatowns
     b) Data from the census regarding the residents and business of the area
 
