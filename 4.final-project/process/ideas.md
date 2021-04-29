@@ -1,12 +1,12 @@
 #### Potential project topics & questions
 
 1. Chinatown Gentrification<br>
-    a) The demographics of American Chinatowns
+    a) The demographics of American Chinatowns<br>
     b) Data from the census regarding the residents and business of the area
 
-2. Quarantine Puppies
-    a) Dogs adopted during quarantine/pandemic
-    b) Babies born in quarantine
+2. Quarantine Puppies<br>
+    a) Dogs adopted during quarantine/pandemic<br>
+    b) Babies born in quarantine<br>
             i) comparing these datasets?
 
 3. Average screentime in quarantine
